@@ -196,3 +196,124 @@ th {
     flex-direction: column;
   }
 }
+/* =========================================
+   ALGORITHM DEMONSTRATION
+========================================= */
+
+.algorithm-card {
+  background: white;
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.algorithm-card h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.algorithm-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.algorithm-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.algorithm-controls label,
+.algorithm-input label {
+  font-weight: bold;
+}
+
+.algorithm-controls select,
+.algorithm-input input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.algorithm-input {
+  margin-bottom: 15px;
+}
+
+.algorithm-input input {
+  margin-top: 8px;
+}
+
+.run-algorithm-btn {
+  display: block;
+  margin: 20px auto;
+  background: #7c3aed;
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+.run-algorithm-btn:hover {
+  background: #6d28d9;
+}
+
+.run-algorithm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.algorithm-result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f7ff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.algorithm-result h3 {
+  text-align: center;
+  color: #7c3aed;
+  margin-top: 0;
+}
+
+.algorithm-result p {
+  margin: 8px 0;
+}
+
+.algorithm-message {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.algorithm-result table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.algorithm-result th {
+  background: #7c3aed;
+  color: white;
+}
+
+.algorithm-result td,
+.algorithm-result th {
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .algorithm-card {
+    padding: 20px;
+  }
+
+  .algorithm-result {
+    overflow-x: auto;
+  }
+}
